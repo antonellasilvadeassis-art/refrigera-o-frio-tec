@@ -1,264 +1,1109 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frio-Tech BH | Assistência Técnica de Refrigeração</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18379840229"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-18379840229');
-  </script>
+<title>FrioForte Refrigeração | Assistência Técnica</title>
 
-  <!-- Event snippet for Visualização de página conversion page -->
-  <script>
-    gtag('event', 'conversion', {
-        'send_to': 'AW-18379840229/SuI_CNa88d4cEOW1mLxE',
-        'value': 1.0,
-        'currency': 'BRL'
-    });
-  </script>
+<meta name="description" content="FrioForte Refrigeração - manutenção de geladeiras, freezers, cervejeiras, frigobares e expositores. 6 meses de garantia nos serviços prestados.">
 
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Roboto, Arial, sans-serif; }
-    body { color: #000000; line-height: 1.7; background: #ffffff; font-size: 20px; padding-top: 140px; font-weight: 500; }
-    .container { max-width: 900px; margin: 0 auto; padding: 30px 20px; }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    .top-buttons-bar { position: fixed; top: 0; left: 0; width: 100%; background: #000000; padding: 12px 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; z-index: 1000; box-shadow: 0 3px 12px rgba(0,0,0,0.25); }
-    .btn-ws-top { background: #00b33c; color: #ffffff; padding: 14px 30px; border-radius: 6px; text-decoration: none; font-weight: 900; font-size: 18px; box-shadow: 0 3px 10px rgba(0,179,60,0.35); border: 2px solid #00d647; }
-    .btn-ws-top:hover { background: #008f30; }
-    .btn-call-top { background: #e60000; color: #ffffff; padding: 14px 30px; border-radius: 6px; text-decoration: none; font-weight: 900; font-size: 18px; box-shadow: 0 3px 10px rgba(230,0,0,0.35); border: 2px solid #ff1a1a; }
-    .btn-call-top:hover { background: #cc0000; }
+html{
+    scroll-behavior:smooth;
+}
 
-    header { background: #000000; color: #ffffff; padding: 25px 20px 15px; text-align: center; border-bottom: 3px solid #ff0000; }
-    header h1 { font-size: 32px; margin-bottom: 8px; font-weight: 900; }
-    header p { font-size: 19px; opacity: 1; font-weight: 600; }
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#061525;
+    color:#fff;
+    line-height:1.6;
+}
 
-    nav { background: #f0f0f0; padding: 14px; text-align: center; position: sticky; top: 65px; z-index: 999; border-bottom: 2px solid #cccccc; }
-    nav a { color: #000000; text-decoration: none; margin: 0 12px; font-weight: 700; font-size: 17px; }
-    nav a:hover { color: #cc0000; text-decoration: underline; }
+a{
+    text-decoration:none;
+    color:inherit;
+}
 
-    h2 { font-size: 28px; margin: 50px 0 25px; padding-bottom: 10px; border-bottom: 3px solid #ff0000; display: inline-block; color: #cc0000; font-weight: 900; }
-    h3 { font-size: 22px; margin: 28px 0 15px; color: #000000; font-weight: 800; }
-    .coverage { background: #f8f8f8; padding: 25px; border-radius: 10px; margin: 25px 0; border: 2px solid #dddddd; }
-    .coverage p { margin-bottom: 12px; color: #111111; font-weight: 500; }
-    .service-item { margin: 28px 0; padding: 18px 20px; background: #f9f9f9; border-radius: 8px; border-left: 5px solid #00b33c; }
-    .service-item h3 { margin-top: 0; }
-    .service-item p { color: #222222; font-weight: 500; }
-    .check-item { margin: 12px 0; padding: 8px 5px; color: #000000; font-weight: 600; font-size: 20px; }
-    .testimonial { background: #f9f9f9; padding: 22px; border-radius: 10px; margin: 18px 0; border-left: 5px solid #ff0000; border: 2px solid #eeeeee; }
-    .stars { color: #e69500; margin-bottom: 10px; font-size: 24px; }
-    .testimonial strong { font-size: 19px; color: #000000; }
-    .testimonial p { color: #222222; margin-top: 8px; }
-    .faq { margin: 35px 0; }
-    .faq-item { margin-bottom: 25px; padding: 15px; background: #f9f9f9; border-radius: 8px; }
-    .faq-question { font-weight: 900; margin-bottom: 8px; color: #000000; font-size: 20px; }
-    .faq-item p { color: #222222; padding: 0 10px; }
-    .contact-box { background: #000000; color: #ffffff; padding: 30px 25px; border-radius: 10px; text-align: center; margin-top: 50px; border: 3px solid #ff0000; }
-    .contact-box p { margin: 10px 0; font-size: 19px; font-weight: 600; }
+.container{
+    width:92%;
+    max-width:1150px;
+    margin:auto;
+}
 
-    .whatsapp-fixo { position: fixed; bottom: 25px; right: 25px; background: #00b33c; color: #ffffff; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; text-decoration: none; box-shadow: 0 4px 15px rgba(0,179,60,0.4); z-index: 999; border: 3px solid #ffffff; }
+/* MENU */
 
-    footer { background: #000000; color: #ffffff; padding: 30px 25px; text-align: center; margin-top: 60px; border-top: 4px solid #ff0000; font-size: 16px; font-weight: 600; }
-    footer p { margin: 8px 0; opacity: 0.95; }
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(4,18,32,.96);
+    border-bottom:1px solid #173b57;
+    backdrop-filter:blur(10px);
+}
 
-    .marcas-box { font-size: 22px; text-align: center; padding: 20px; background: #f9f9f9; border-radius: 10px; border: 2px solid #e0e0e0; font-weight: 700; color: #000000; line-height: 1.8; }
+nav{
+    min-height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-    @media(max-width: 768px) {
-      nav a { display: inline-block; margin: 8px 10px; }
-      body { font-size: 18px; padding-top: 130px; }
-      .top-buttons-bar { gap: 12px; }
-      .btn-ws-top, .btn-call-top { padding: 12px 20px; font-size: 16px; }
-      h2 { font-size: 24px; }
-      h3 { font-size: 20px; }
+.logo{
+    font-size:25px;
+    font-weight:900;
+    letter-spacing:.5px;
+}
+
+.logo span{
+    color:#18a9ff;
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#19b0ff;
+}
+
+/* HERO */
+
+.hero{
+    padding:90px 0 70px;
+    background:
+    radial-gradient(circle at 80% 20%,rgba(0,140,255,.28),transparent 35%),
+    radial-gradient(circle at 10% 80%,rgba(0,220,130,.10),transparent 30%);
+}
+
+.hero-grid{
+    display:grid;
+    grid-template-columns:1.3fr .7fr;
+    gap:50px;
+    align-items:center;
+}
+
+.tag{
+    color:#54c4ff;
+    font-weight:900;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:14px;
+}
+
+h1{
+    font-size:clamp(42px,7vw,78px);
+    line-height:.98;
+    margin:15px 0 25px;
+}
+
+h1 span{
+    color:#25b5ff;
+}
+
+.hero-text{
+    color:#a9bdcc;
+    font-size:19px;
+    max-width:700px;
+}
+
+.buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    padding:15px 22px;
+    border-radius:12px;
+    font-weight:900;
+    border:1px solid transparent;
+}
+
+.whatsapp{
+    background:#20c86b;
+    color:#032014;
+}
+
+.phone{
+    background:#087cff;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+/* GARANTIA */
+
+.badge{
+    background:linear-gradient(145deg,#0d304b,#081a2c);
+    border:1px solid #2a7098;
+    border-radius:25px;
+    padding:45px 25px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
+
+.badge-icon{
+    font-size:70px;
+}
+
+.badge strong{
+    display:block;
+    color:#58c6ff;
+    font-size:42px;
+}
+
+.badge small{
+    color:#b5c8d5;
+    font-weight:bold;
+}
+
+/* SEÇÕES */
+
+section{
+    padding:75px 0;
+}
+
+.title{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:12px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#a9bdcc;
+    max-width:750px;
+    margin:0 auto 40px;
+}
+
+/* CARDS */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    background:#0b2033;
+    border:1px solid #183b54;
+    border-radius:18px;
+    padding:25px;
+}
+
+.card:hover{
+    border-color:#168cff;
+    transform:translateY(-3px);
+}
+
+.icon{
+    font-size:40px;
+}
+
+.card h3{
+    margin:10px 0;
+    font-size:22px;
+}
+
+.card p{
+    color:#a9bdcc;
+}
+
+/* GARANTIA GRANDE */
+
+.guarantee{
+    background:linear-gradient(110deg,#087cff,#0b9e80);
+    border-radius:25px;
+    padding:45px 25px;
+    text-align:center;
+}
+
+.guarantee h2{
+    font-size:clamp(35px,6vw,60px);
+}
+
+.guarantee p{
+    font-size:18px;
+}
+
+/* VISITA */
+
+.visit{
+    margin-top:25px;
+    text-align:center;
+    background:#0b2033;
+    border:1px solid #1d506f;
+    border-radius:18px;
+    padding:25px;
+}
+
+.visit strong{
+    color:#54c4ff;
+}
+
+/* MARCAS */
+
+.brands{
+    text-align:center;
+    color:#d8ebf5;
+    font-weight:bold;
+}
+
+.brands span{
+    display:inline-block;
+    padding:8px 12px;
+}
+
+/* ÁREA */
+
+.area{
+    text-align:center;
+    background:#0b2033;
+    border:1px solid #183b54;
+    border-radius:20px;
+    padding:35px;
+}
+
+.area p{
+    color:#b5c8d5;
+    margin-bottom:15px;
+}
+
+/* FAQ */
+
+details{
+    background:#0b2033;
+    border:1px solid #183b54;
+    border-radius:12px;
+    padding:18px 20px;
+    margin:12px 0;
+}
+
+summary{
+    cursor:pointer;
+    font-weight:bold;
+}
+
+details p{
+    color:#a9bdcc;
+    margin-top:12px;
+}
+
+/* CONTATO */
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+.contact-box{
+    background:#0b2033;
+    border:1px solid #183b54;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+}
+
+.contact-box p{
+    color:#a9bdcc;
+    font-size:20px;
+    margin:10px 0 20px;
+}
+
+/* FOOTER */
+
+footer{
+    border-top:1px solid #183b54;
+    padding:35px 0;
+    text-align:center;
+    color:#8fa6b7;
+}
+
+footer strong{
+    color:#fff;
+    font-size:20px;
+}
+
+/* WHATSAPP FIXO */
+
+.whatsapp-fixed{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:9999;
+    background:#20c86b;
+    color:#032014;
+    padding:16px 22px;
+    border-radius:50px;
+    font-weight:900;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+/* CELULAR */
+
+@media(max-width:800px){
+
+    .menu{
+        display:none;
     }
-  </style>
+
+    .hero{
+        padding:55px 0;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .contact{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:48px;
+    }
+
+    .badge{
+        max-width:420px;
+        margin:auto;
+    }
+
+    .whatsapp-fixed{
+        left:15px;
+        right:15px;
+        text-align:center;
+    }
+}
+</style>
 </head>
+
 <body>
 
-  <!-- BOTÕES FIXADOS NO TOPO — NUNCA SOMEM! -->
-  <div class="top-buttons-bar">
-    <a href="https://wa.me/5531973624049" target="_blank" class="btn-ws-top">💬 WhatsApp</a>
-    <a href="tel:+5531973624049" class="btn-call-top">📞 Ligar Agora</a>
-  </div>
+<header>
+<div class="container">
 
-  <header>
-    <h1>❄️ FRIO-TECH BH</h1>
-    <p><strong>ASSISTÊNCIA TÉCNICA EM REFRIGERAÇÃO</strong></p>
-    <p>📍 Atendemos BH e região — raio de 50 km</p>
-  </header>
+<nav>
 
-  <nav>
-    <a href="#inicio">Início</a>
-    <a href="#cobertura">Atendimento</a>
-    <a href="#servicos">Serviços</a>
-    <a href="#problemas">Problemas</a>
-    <a href="#vantagens">Vantagens</a>
-    <a href="#marcas">Marcas</a>
-    <a href="#avaliacoes">Avaliações</a>
-    <a href="#contato">Contato</a>
-  </nav>
+<a href="#inicio" class="logo">
+❄️ FRIO<span>FORTE</span>
+</a>
 
-  <div class="container" id="inicio">
+<div class="menu">
+<a href="#servicos">Serviços</a>
+<a href="#diferenciais">Diferenciais</a>
+<a href="#faq">Dúvidas</a>
+<a href="#contato">Contato</a>
+</div>
 
-    <div class="coverage" id="cobertura">
-      <h3>📍 ATENDEMOS EM TODA A REGIÃO:</h3>
-      <p><strong>Belo Horizonte:</strong> Centro, Barreiro, Pampulha, Venda Nova, Ouro Preto, São Vicente, Floresta, São Cristóvão, Carlos Prates, Cachoeirinha, Glória, Gutierrez, Savassi, Lourdes, Santo Antônio, São Bento, Nova Esperança e outros bairros</p>
-      <p><strong>Contagem:</strong> Centro, Eldorado, Água Branca, Cabral, Amazonas, Bairro das Indústrias, Cidade Industrial, Riacho das Pedras, Novo Eldorado, Jardim Laguna</p>
-      <p><strong>Betim:</strong> Centro, Ingá, Citrolândia, Jardim das Alterosas, Iguaçu, São Caetano, Santa Cruz, Petrópolis, Distrito Industrial</p>
-      <p><strong>Ribeirão das Neves:</strong> Centro, Jardim Petrópolis, Veneza, Industrial, São Cristóvão, Santa Helena, Marajó, Liberdade</p>
-      <p><strong>Santa Luzia:</strong> Centro, São Benedito, Vila Monsenhor, São Vicente, Frimisa, Palmital, Nossa Senhora de Fátima</p>
-      <p><strong>Vespasiano:</strong> Centro, Jardim Aeroporto, Vila Esperança, São José, Industrial, Santa Rosa</p>
-      <p><strong>Sabará:</strong> Centro, Santa Tereza, Caetano Furquim, Nossa Senhora de Fátima, Vila dos Ipês</p>
-      <p><strong>Nova Lima:</strong> Centro, Vila Del Rey, Jardim Canadá, Bela Vista, Vale do Sol, Alphaville</p>
-      <p><strong>Igarapé:</strong> Centro, São Geraldo, Vila Nova, São Vicente, Jardim América</p>
-      <p><strong>Brumadinho:</strong> Centro, Parque das Águas, São José, Vila Domingos, Santa Luzia</p>
-      <p><strong>Raposos, Ibirité, Esmeraldas, Capim Branco, Pedro Leopoldo e toda a região</strong></p>
-    </div>
+</nav>
 
-    <h2 id="servicos">NOSSOS SERVIÇOS</h2>
+</div>
+</header>
 
-    <div class="service-item">
-      <h3>🧊 MANUTENÇÃO DE GELADEIRA</h3>
-      <p>Conserto e manutenção de todos os modelos e marcas — Frost Free, convencional, inverter</p>
-    </div>
 
-    <div class="service-item">
-      <h3>❄️ MANUTENÇÃO DE FREEZER</h3>
-      <p>Horizontal e vertical. Não gela, para de funcionar, faz barulho — resolvemos na hora</p>
-    </div>
+<main id="inicio">
 
-    <div class="service-item">
-      <h3>🍺 MANUTENÇÃO DE CERVEJEIRO</h3>
-      <p>Limpeza, reparos, recarga de gás e termostato. Equipamentos de bar e loja</p>
-    </div>
+<!-- PRIMEIRA TELA -->
 
-    <div class="service-item">
-      <h3>🏪 EXPOSITOR / FRIGOBAR</h3>
-      <p>Conserto para residência, hotel e comércio. Todas as marcas e modelos</p>
-    </div>
+<section class="hero">
 
-    <h2 id="problemas">PROBLEMAS QUE RESOLVEMOS</h2>
-    <div class="check-item">✅ Geladeira não gela</div>
-    <div class="check-item">✅ Faz muito gelo ou não faz gelo</div>
-    <div class="check-item">✅ Vaza água no chão</div>
-    <div class="check-item">✅ Faz barulho estranho</div>
-    <div class="check-item">✅ Não liga ou desliga sozinha</div>
-    <div class="check-item">✅ Luz acende mas não gela</div>
-    <div class="check-item">✅ Geladeira gasta muita energia</div>
-    <div class="check-item">✅ Congela em cima e não embaixo</div>
+<div class="container hero-grid">
 
-    <h2 id="vantagens">POR QUE ESCOLHER A FRIO-TECH?</h2>
+<div>
 
-    <div class="service-item">
-      <h3>📝 ORÇAMENTO GRATUITO</h3>
-      <p>Taxa de deslocamento do técnico R$ 50,00. Se aprovar o orçamento, não cobramos a taxa.</p>
-    </div>
+<div class="tag">
+Assistência técnica em refrigeração
+</div>
 
-    <div class="service-item">
-      <h3>🚚 ATENDIMENTO EM DOMICÍLIO</h3>
-      <p>Vou até você em BH e região — raio de 50 km. Sem dor de cabeça!</p>
-    </div>
+<h1>
+Seu equipamento parou?<br>
+<span>A FrioForte resolve.</span>
+</h1>
 
-    <div class="service-item">
-      <h3>🔧 PEÇAS ORIGINAIS</h3>
-      <p>Só troco peça com sua autorização prévia. Te falo o valor antes de qualquer coisa.</p>
-    </div>
+<p class="hero-text">
+Manutenção especializada de geladeiras, freezers, cervejeiras,
+frigobares e expositores, com atendimento em domicílio.
+</p>
 
-    <div class="service-item">
-      <h3>🛡️ 90 DIAS DE GARANTIA</h3>
-      <p>Se algo der errado, eu volto sem custo adicional. Fica tranquilo!</p>
-    </div>
+<div class="buttons">
 
-    <div class="service-item">
-      <h3>⏰ PONTUALIDADE</h3>
-      <p>Chego no horário combinado. Não te deixo esperando o dia todo!</p>
-    </div>
+<a class="btn whatsapp"
+href="https://wa.me/5531973624049?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20FrioForte%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20um%20or%C3%A7amento."
+target="_blank">
 
-    <div class="service-item">
-      <h3>💰 PREÇO JUSTO</h3>
-      <p>Valor claro e direto. Sem surpresa na hora de pagar. Sem pegadinha!</p>
-    </div>
+💬 PEDIR ORÇAMENTO
 
-    <h2 id="marcas">TRABALHAMOS COM TODAS AS MARCAS</h2>
-    <div class="marcas-box">
-      Brastemp • Consul • Electrolux • Samsung • LG • Panasonic • Gelopar • Metalfrio • e muito mais!
-    </div>
+</a>
 
-    <h2 id="avaliacoes">O QUE DIZEM NOSSOS CLIENTES</h2>
+<a class="btn phone"
+href="tel:+5531973624049">
 
-    <div class="testimonial">
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-      <strong>Maria Silva</strong>
-      <p>Chegou rápido, consertou minha geladeira no mesmo dia. Preço justo e trabalho limpo. Recomendo demais!</p>
-      <p style="margin-top: 8px; font-size: 15px; color: #666666; font-weight: 600;">Avaliado no Google</p>
-    </div>
+📞 LIGAR AGORA
 
-    <div class="testimonial">
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-      <strong>João Costa</strong>
-      <p>Profissional de verdade. Explicou direitinho o que estava acontecendo e resolveu o problema de primeira.</p>
-      <p style="margin-top: 8px; font-size: 15px; color: #666666; font-weight: 600;">Avaliado no Google</p>
-    </div>
+</a>
 
-    <div class="testimonial">
-      <div class="stars">⭐⭐⭐⭐⭐</div>
-      <strong>Ana Carolina</strong>
-      <p>Atendimento nota 10! Pontual, educado e consertou minha cervejeira que ninguém conseguia.</p>
-      <p style="margin-top: 8px; font-size: 15px; color: #666666; font-weight: 600;">Avaliado no Google</p>
-    </div>
+</div>
 
-    <h2>DÚVIDAS COMUNS</h2>
+</div>
 
-    <div class="faq">
-      <div class="faq-item">
-        <div class="faq-question">📍 Vocês atendem onde?</div>
-        <p>Belo Horizonte, Contagem, Betim, Ribeirão das Neves, Santa Luzia, Vespasiano, Sabará, Nova Lima, Igarapé, Brumadinho e toda a região num raio de 50 km.</p>
-      </div>
 
-      <div class="faq-item">
-        <div class="faq-question">💰 Cobra taxa de visita?</div>
-        <p>Taxa de deslocamento do técnico R$ 50,00. Caso aprove o orçamento, o valor não é cobrado.</p>
-      </div>
+<div class="badge">
 
-      <div class="faq-item">
-        <div class="faq-question">⏰ Quando chega?</div>
-        <p>Atendimento no mesmo dia ou no dia seguinte, conforme disponibilidade.</p>
-      </div>
+<div class="badge-icon">
+❄️
+</div>
 
-      <div class="faq-item">
-        <div class="faq-question">📦 Tem peça na hora?</div>
-        <p>Tenho as principais comigo. Se precisar de algo específico, aviso o prazo antes.</p>
-      </div>
+<strong>
+6 MESES
+</strong>
 
-      <div class="faq-item">
-        <div class="faq-question">🛠️ E se precisar trocar peça?</div>
-        <p>Só troco com sua autorização. Te falo o valor e você decide se aprova.</p>
-      </div>
-    </div>
+<small>
+DE GARANTIA NOS SERVIÇOS PRESTADOS
+</small>
 
-    <div class="contact-box" id="contato">
-      <h3 style="color:#ffffff; margin-bottom:18px; font-size:24px; font-weight:900;">FALE CONOSCO</h3>
-      <p>📞 LIGAR: (31) 97362-4049</p>
-      <p>💬 WHATSAPP: (31) 97362-4049</p>
-      <p>⏰ SEGUNDA A SÁBADO — 8h ÀS 18h</p>
-      <p>📍 ATENDIMENTO EM BH, CONTAGEM, BETIM, BRUMADINHO E REGIÃO — RAIO DE 50 KM</p>
-    </div>
+</div>
 
-  </div>
+</div>
 
-  <footer>
-    <p style="font-size: 18px; font-weight: 900;">❄️ FRIO-TECH BH — ASSISTÊNCIA TÉCNICA DE REFRIGERAÇÃO</p>
-    <p>📞 (31) 97362-4049 | 💬 WhatsApp direto no site</p>
-    <p>📍 Atendimento em BH e toda a região num raio de 50 km</p>
-    <p style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #333333;">© 2026 Frio-Tech BH — Todos os direitos reservados</p>
-  </footer>
+</section>
 
-  <a href="https://wa.me/5531973624049" target="_blank" class="whatsapp-fixo">💬</a>
+
+<!-- GARANTIA -->
+
+<section>
+
+<div class="container">
+
+<div class="guarantee">
+
+<h2>
+🛡️ 6 MESES DE GARANTIA
+</h2>
+
+<p>
+Mais tranquilidade para você contratar nosso serviço.
+Consulte as condições da garantia.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVIÇOS -->
+
+<section id="servicos">
+
+<div class="container">
+
+<h2 class="title">
+🔧 Nossos Serviços
+</h2>
+
+<p class="subtitle">
+Manutenção, reforma e personalização de equipamentos
+residenciais e comerciais.
+</p>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<div class="icon">🧊</div>
+
+<h3>
+Geladeiras
+</h3>
+
+<p>
+Manutenção de geladeiras com problemas de refrigeração,
+compressor, gás, placa, termostato, vazamento e outros defeitos.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">❄️</div>
+
+<h3>
+Freezers
+</h3>
+
+<p>
+Manutenção de freezers horizontais e verticais,
+incluindo sistema de refrigeração, compressor, gás e componentes.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🍺</div>
+
+<h3>
+Cervejeiras
+</h3>
+
+<p>
+Manutenção de cervejeiras, controle de temperatura,
+ventilação, compressor e sistema de refrigeração.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏪</div>
+
+<h3>
+Frigobares e Expositores
+</h3>
+
+<p>
+Manutenção de frigobares, expositores e equipamentos
+comerciais de refrigeração.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🛠️</div>
+
+<h3>
+Reforma de Freezers
+</h3>
+
+<p>
+Reforma, recuperação e personalização de freezers
+conforme a necessidade do cliente.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🔄</div>
+
+<h3>
+Compra e Venda
+</h3>
+
+<p>
+Avaliação e negociação de equipamentos funcionando
+ou com defeito.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DIFERENCIAIS -->
+
+<section id="diferenciais">
+
+<div class="container">
+
+<h2 class="title">
+Por que escolher a FrioForte?
+</h2>
+
+<p class="subtitle">
+Um atendimento pensado para oferecer confiança,
+clareza e qualidade.
+</p>
+
+
+<div class="grid">
+
+
+<div class="card">
+
+<div class="icon">🛡️</div>
+
+<h3>
+6 meses de garantia
+</h3>
+
+<p>
+Garantia de 6 meses nos serviços prestados,
+conforme as condições do serviço.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏠</div>
+
+<h3>
+Atendimento em domicílio
+</h3>
+
+<p>
+O técnico vai até você, evitando o transporte
+do equipamento.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🔧</div>
+
+<h3>
+Serviço especializado
+</h3>
+
+<p>
+Avaliação técnica do equipamento antes da execução
+do serviço.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">⚡</div>
+
+<h3>
+Agilidade
+</h3>
+
+<p>
+Atendimento rápido conforme disponibilidade
+de horário e rota.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">💰</div>
+
+<h3>
+Orçamento transparente
+</h3>
+
+<p>
+Você recebe o orçamento antes da execução
+do serviço.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📲</div>
+
+<h3>
+Atendimento pelo WhatsApp
+</h3>
+
+<p>
+Envie fotos, vídeos e informações do equipamento
+para agilizar seu atendimento.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- TAXA -->
+
+<section>
+
+<div class="container">
+
+<h2 class="title">
+🚗 Como funciona a visita técnica?
+</h2>
+
+<p class="subtitle">
+Para enviar o técnico até o local, existe uma taxa
+de deslocamento.
+</p>
+
+
+<div class="grid">
+
+<div class="card">
+
+<div class="icon">📍</div>
+
+<h3>
+1. Você chama
+</h3>
+
+<p>
+Envie fotos ou vídeos do equipamento,
+explique o problema e informe seu bairro.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🚗</div>
+
+<h3>
+2. Visita técnica
+</h3>
+
+<p>
+A taxa de deslocamento para a visita técnica
+é de <strong>R$ 50,00</strong>.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">✅</div>
+
+<h3>
+3. Aprovação do orçamento
+</h3>
+
+<p>
+Se você aprovar o orçamento e realizar o serviço,
+<strong>os R$ 50,00 do deslocamento não serão cobrados.</strong>
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MARCAS -->
+
+<section>
+
+<div class="container">
+
+<h2 class="title">
+🏷️ Trabalhamos com todas as marcas
+</h2>
+
+<p class="subtitle">
+Atendemos diversas marcas de equipamentos de refrigeração.
+</p>
+
+<div class="brands">
+
+<span>Brastemp</span>
+<span>Consul</span>
+<span>Electrolux</span>
+<span>Samsung</span>
+<span>LG</span>
+<span>Panasonic</span>
+<span>Gelopar</span>
+<span>Metalfrio</span>
+<span>Philco</span>
+<span>Dako</span>
+<span>e outras</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ÁREA -->
+
+<section>
+
+<div class="container">
+
+<h2 class="title">
+📍 Área de Atendimento
+</h2>
+
+<p class="subtitle">
+Atendemos Belo Horizonte e região metropolitana,
+conforme disponibilidade de rota.
+</p>
+
+
+<div class="area">
+
+<p>
+<strong>
+Belo Horizonte • Contagem • Betim • Ribeirão das Neves
+• Santa Luzia • Vespasiano • Sabará • Nova Lima
+</strong>
+</p>
+
+<p>
+Também atendemos cidades da região metropolitana
+conforme disponibilidade.
+</p>
+
+<a class="btn whatsapp"
+href="https://wa.me/5531973624049?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20se%20voc%C3%AAs%20atendem%20meu%20bairro."
+target="_blank">
+
+📍 CONSULTAR MEU BAIRRO
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section id="faq">
+
+<div class="container">
+
+<h2 class="title">
+❓ Perguntas frequentes
+</h2>
+
+
+<details>
+
+<summary>
+Qual é a garantia do serviço?
+</summary>
+
+<p>
+A FrioForte oferece 6 meses de garantia nos serviços prestados,
+conforme as condições informadas no atendimento.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Existe taxa de deslocamento?
+</summary>
+
+<p>
+Sim. A visita técnica possui uma taxa de deslocamento de R$ 50,00.
+Caso o orçamento seja aprovado e o serviço seja realizado,
+essa taxa não será cobrada.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+O técnico vai até minha residência?
+</summary>
+
+<p>
+Sim. Trabalhamos com atendimento em domicílio,
+conforme disponibilidade de rota.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Preciso levar meu equipamento?
+</summary>
+
+<p>
+Não. O atendimento é realizado no local,
+quando o serviço permitir.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Vocês trocam peças sem minha autorização?
+</summary>
+
+<p>
+Não. Qualquer troca de peça ou serviço adicional
+é informado antes da execução.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+Como pedir um orçamento?
+</summary>
+
+<p>
+Clique no botão do WhatsApp e envie fotos ou vídeo
+do equipamento, explique o defeito e informe seu bairro.
+</p>
+
+</details>
+
+</div>
+
+</section>
+
+
+<!-- CONTATO -->
+
+<section id="contato">
+
+<div class="container">
+
+<h2 class="title">
+📞 Fale com a FrioForte
+</h2>
+
+<p class="subtitle">
+Mande as informações do equipamento e agilize seu orçamento.
+</p>
+
+
+<div class="contact">
+
+
+<div class="contact-box">
+
+<h3>
+💬 WhatsApp
+</h3>
+
+<p>
+(31) 97362-4049
+</p>
+
+<a class="btn whatsapp"
+href="https://wa.me/5531973624049"
+target="_blank">
+
+CHAMAR NO WHATSAPP
+
+</a>
+
+</div>
+
+
+<div class="contact-box">
+
+<h3>
+📞 Telefone
+</h3>
+
+<p>
+(31) 97362-4049
+</p>
+
+<a class="btn phone"
+href="tel:+5531973624049">
+
+LIGAR AGORA
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container">
+
+<strong>
+❄️ FrioForte Refrigeração
+</strong>
+
+<p>
+Manutenção • Reforma • Personalização de equipamentos
+</p>
+
+<p>
+© 2026 FrioForte Refrigeração. Todos os direitos reservados.
+</p>
+
+</div>
+
+</footer>
+
+
+<!-- BOTÃO WHATSAPP -->
+
+<a
+class="whatsapp-fixed"
+href="https://wa.me/5531973624049?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20FrioForte%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20um%20or%C3%A7amento."
+target="_blank">
+
+💬 Falar no WhatsApp
+
+</a>
 
 </body>
 </html>
